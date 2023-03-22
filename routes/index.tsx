@@ -1,5 +1,6 @@
 import { Head } from "$fresh/runtime.ts";
 import { PageProps } from "$fresh/server.ts";
+import Header from "./components/Header.tsx";
 
 const TITLE = "@danimydev";
 const DESCRIPTION =
@@ -16,9 +17,10 @@ export default function Home(props: PageProps) {
         <meta property="og:type" content="website" />
         <meta property="og:url" content={props.url.href} />
       </Head>
-      <p class="text-lg font-medium">
-        Hello World
-      </p>
+
+      <body class="md:container md:mx-auto">
+        <Header active="/" />
+      </body>
     </>
   );
 }
