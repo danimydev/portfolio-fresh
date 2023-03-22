@@ -16,7 +16,9 @@ export default function Home(props: PageProps) {
         <meta property="og:type" content="website" />
         <meta property="og:url" content={props.url.href} />
       </Head>
-      Comming soon...
+      <p class="text-lg font-medium">
+        Hello World
+      </p>
     </>
   );
 }
