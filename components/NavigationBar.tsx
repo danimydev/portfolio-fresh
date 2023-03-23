@@ -1,5 +1,5 @@
 export default function NavigationBar(
-  props: { active: string; class?: string },
+  props: { active: string },
 ) {
   const items = [
     {
@@ -13,13 +13,13 @@ export default function NavigationBar(
   ];
 
   return (
-    <nav class={"flex " + props.class ?? ""}>
-      <ul class="flex justify-center items-center gap-4 mx-4 my-6 flex-wrap">
+    <nav>
+      <ul class="flex items-center gap-4 my-6 flex-wrap">
         {items.map((item) => (
           <li>
             <a
               href={item.href}
-              class={`p-2 hover:underline ${
+              class={`hover:underline ${
                 props.active == item.href ? "font-bold" : ""
               }`}
             >
