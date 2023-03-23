@@ -1,6 +1,7 @@
 import { Head } from "$fresh/runtime.ts";
 import { PageProps } from "$fresh/server.ts";
-import Header from "./components/Header.tsx";
+import Footer from "../components/Footer.tsx";
+import Header from "../components/Header.tsx";
 
 const TITLE = "@danimydev";
 const DESCRIPTION =
@@ -20,12 +21,7 @@ export default function Home(props: PageProps) {
 
       <body class="md:container md:mx-auto">
         <Header active="/about" />
-
-        <main>
-        </main>
-
-        <footer>
-        </footer>
+        <Footer />
       </body>
     </>
   );
