@@ -20,8 +20,8 @@ export default function Home(props: PageProps) {
       </Head>
 
       <body class="md:container md:mx-auto">
-        <Header active="/about" />
-        <Footer />
+        <Header active="/"></Header>
+        <Footer></Footer>
       </body>
     </>
   );
