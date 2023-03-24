@@ -19,7 +19,7 @@ export default function Home(props: PageProps) {
         <meta property="og:url" content={props.url.href} />
       </Head>
 
-      <body class="max-w-xl mx-auto">
+      <body class="max-w-xl mx-auto font-mono">
         <Header active="/about"></Header>
         <Footer></Footer>
       </body>
