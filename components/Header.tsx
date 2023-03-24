@@ -6,9 +6,9 @@ export default function Header(props: { active: string }) {
       <div class="">
         <img
           class="w-20"
-          src="/logo.png"
+          src="/logo_animated.gif"
           alt="danimydev profile logo"
-          srcset=""
+          srcset="/logo_animated.gif"
         />
       </div>
       <div>
