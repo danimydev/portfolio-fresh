@@ -1,15 +1,27 @@
+import { LANGUAGE_CLASSES } from "../github/data.tsx";
 import { GitHubRepo } from "../github/interfaces.tsx";
 
 export default function ProjectListItem(props: { repo: GitHubRepo }) {
   return (
-    <div class="md:container my-2">
+    <div class="md:container my-4">
       <div>
-        <span class="text-underline">{props.repo.name}:</span>{" "}
-        <span>{props.repo.description}</span>
         <div>
-          <span class="text-xs bg-black text-white px-2 py-1 rounded">
+          <a href={props.repo.html_url} target="_blank" class="text-underline">
+            {props.repo.name}:
+          </a>{" "}
+          <span>{props.repo.description}</span>
+        </div>
+
+        <div class="flex">
+          <div
+            class={`px-2 py-2 rounded ${
+              LANGUAGE_CLASSES.get(props.repo.language.toLowerCase())
+            }`}
+          >
+          </div>
+          <div class="text-xs">
             {props.repo.language}
-          </span>
+          </div>
         </div>
       </div>
     </div>
