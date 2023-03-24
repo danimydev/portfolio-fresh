@@ -2,11 +2,19 @@ import NavigationBar from "./NavigationBar.tsx";
 
 export default function Header(props: { active: string }) {
   return (
-    <div>
-      <header class="my-6">
-        <span class="font-bold text-xl">Daniel Madrid Yepez</span>
+    <header class="py-6 flex flex-col md:flex-row gap-4 items-center">
+      <div class="">
+        <img
+          class="w-20"
+          src="/logo.png"
+          alt="danimydev profile logo"
+          srcset=""
+        />
+      </div>
+      <div>
+        <span class="font-bold text-xl">daniel madrid</span>
         <NavigationBar active={props.active} />
-      </header>
-    </div>
+      </div>
+    </header>
   );
 }
