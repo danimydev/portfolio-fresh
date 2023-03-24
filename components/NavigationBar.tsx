@@ -3,11 +3,11 @@ export default function NavigationBar(
 ) {
   const items = [
     {
-      name: "Home",
+      name: "HOME",
       href: "/",
     },
     {
-      name: "About",
+      name: "ABOUT",
       href: "/about",
     },
   ];
@@ -19,7 +19,7 @@ export default function NavigationBar(
           <li>
             <a
               href={item.href}
-              class={`hover:underline ${
+              class={`hover:underline text-xs ${
                 props.active == item.href ? "font-bold" : ""
               }`}
             >
