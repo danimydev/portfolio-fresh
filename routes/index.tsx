@@ -21,7 +21,7 @@ export default function Home(props: PageProps<unknown>) {
         <meta property="og:url" content={props.url.href} />
       </Head>
 
-      <body class="md:container md:mx-auto">
+      <body class="max-w-xl mx-auto">
         <Header active="/"></Header>
         <ProjectList repos={gitHubRepos}></ProjectList>
         <Footer></Footer>

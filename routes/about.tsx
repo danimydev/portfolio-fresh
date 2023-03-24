@@ -19,8 +19,8 @@ export default function Home(props: PageProps) {
         <meta property="og:url" content={props.url.href} />
       </Head>
 
-      <body class="md:container md:mx-auto">
-        <Header active="/"></Header>
+      <body class="max-w-xl mx-auto">
+        <Header active="/about"></Header>
         <Footer></Footer>
       </body>
     </>
