@@ -14,7 +14,7 @@ export default function NavigationBar(
 
   return (
     <nav>
-      <ul class="flex items-center gap-4 my-6 flex-wrap">
+      <ul class="flex items-center gap-4 flex-wrap">
         {items.map((item) => (
           <li>
             <a
