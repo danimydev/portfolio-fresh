@@ -28,7 +28,7 @@ export interface GitHubRepo {
   clone_url: string;
   svn_url: string;
   homepage: string | null;
-  language: string | null;
+  language: string;
   license: License | null;
   topics: string[];
 }
