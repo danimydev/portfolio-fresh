@@ -1661,3 +1661,7 @@ export const gitHubRepos: GitHubRepo[] = GITHUB_REPOSITORIES.map((repo) => {
     updated_at: repo.updated_at,
   };
 });
+
+export const LANGUAGE_CLASSES = new Map()
+  .set("javascript", "bg-[#f7ec11]")
+  .set("typescript", "bg-[#1c8eff]");
