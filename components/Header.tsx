@@ -12,7 +12,7 @@ export default function Header(props: { active: string }) {
         />
       </div>
       <div>
-        <span class="font-bold text-xl">daniel madrid</span>
+        <a class="font-bold text-xl" href="/">daniel madrid</a>
         <NavigationBar active={props.active} />
       </div>
     </header>
