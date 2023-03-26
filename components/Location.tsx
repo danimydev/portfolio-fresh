@@ -20,7 +20,7 @@ export default function Location() {
   }
 
   return (
-    <div class="flex p-5 border-1">
+    <div class="flex p-5 border-1 my-10">
       <div>
         📍
       </div>
