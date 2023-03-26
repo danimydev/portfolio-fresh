@@ -14,7 +14,7 @@ export default function ProjectListItem(props: { repo: GitHubRepo }) {
 
         <div class="flex">
           <div
-            class={`px-2 py-2 rounded ${
+            class={`mr-2 px-2 py-2 rounded ${
               LANGUAGE_CLASSES.get(props.repo.language.toLowerCase())
             }`}
           >
