@@ -6,9 +6,9 @@ export default function ProjectList(props: { repos: GitHubRepo[] }) {
     <ProjectListItem key={repo.id} repo={repo} />
   ));
   return (
-    <>
+    <div class="my-6">
       <h3 class="font-bold">Projects</h3>
       <ul>{listItems}</ul>
-    </>
+    </div>
   );
 }
