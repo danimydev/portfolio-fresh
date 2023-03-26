@@ -29,7 +29,7 @@ export default function Location() {
           {date()}
         </div>
         <div class="flex items-center">
-          Barranquilla, Colombia &#x1F1E8;&#x1F1F4;
+          Barranquilla, Colombia
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Colombia.svg"
             alt="colombia flag"
