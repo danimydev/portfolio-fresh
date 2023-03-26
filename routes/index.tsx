@@ -4,6 +4,7 @@ import Header from "../components/Header.tsx";
 import Footer from "../components/Footer.tsx";
 import { gitHubRepos } from "../github/data.tsx";
 import ProjectList from "../components/ProjectList.tsx";
+import Social from "../components/Social.tsx";
 
 const TITLE = "@danimydev";
 const DESCRIPTION =
@@ -19,10 +20,16 @@ export default function Home(props: PageProps<unknown>) {
         <meta property="og:description" content={DESCRIPTION} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={props.url.href} />
+        <script
+          src="https://kit.fontawesome.com/4eca672d57.js"
+          crossOrigin="anonymous"
+        >
+        </script>
       </Head>
 
       <body class="max-w-xl mx-auto font-mono">
         <Header active="/"></Header>
+        <Social></Social>
         <ProjectList repos={gitHubRepos}></ProjectList>
         <Footer></Footer>
       </body>
