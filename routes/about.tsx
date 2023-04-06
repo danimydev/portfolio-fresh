@@ -5,7 +5,6 @@ import Header from "../components/Header.tsx";
 import Location from "../components/Location.tsx";
 import Biography from "../components/Biography.tsx";
 import Experience from "../components/Experience.tsx";
-import Contact from "../components/Contact.tsx";
 
 const TITLE = "@danimydev";
 const DESCRIPTION =
@@ -33,7 +32,6 @@ export default function Home(props: PageProps) {
         <Biography></Biography>
         <Location></Location>
         <Experience></Experience>
-        <Contact></Contact>
         <Footer></Footer>
       </body>
     </>
