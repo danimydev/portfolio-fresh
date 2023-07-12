@@ -2,9 +2,9 @@ import { Head } from "$fresh/runtime.ts";
 import { PageProps } from "$fresh/server.ts";
 import Header from "../components/Header.tsx";
 import Footer from "../components/Footer.tsx";
-import { gitHubRepos } from "../github/data.tsx";
 import ProjectList from "../components/ProjectList.tsx";
 import Social from "../components/Social.tsx";
+import { repositories } from "../github/data.ts";
 
 const TITLE = "@danimydev";
 const DESCRIPTION =
@@ -30,7 +30,7 @@ export default function Home(props: PageProps<unknown>) {
       <body class="max-w-xl mx-auto font-mono">
         <Header active="/"></Header>
         <Social></Social>
-        <ProjectList repos={gitHubRepos}></ProjectList>
+        <ProjectList repos={repositories}></ProjectList>
         <Footer></Footer>
       </body>
     </>

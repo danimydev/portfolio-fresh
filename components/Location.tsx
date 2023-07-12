@@ -1,20 +1,22 @@
-const monthNames = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
-];
+import { user } from "../github/data.ts";
 
 export default function Location() {
-  function date() {
+  const monthNames = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+
+  function getDate() {
     const date = new Date();
     return `(${monthNames[date.getMonth()]} ${date.getFullYear()})`;
   }
@@ -26,10 +28,10 @@ export default function Location() {
       </div>
       <div>
         <div class="opacity-50">
-          {date()}
+          {getDate()}
         </div>
         <div class="flex items-center">
-          Barranquilla, Colombia
+          {user.location}
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Colombia.svg"
             alt="colombia flag"

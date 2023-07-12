@@ -1,35 +1,35 @@
-const positions = [
-  {
-    title: "Software Enginner",
-    company: {
-      name: "CI&T",
-      url: "https://ciandt.com/us/en-us",
-    },
-  },
-  {
-    title: "Software Enginner",
-    company: {
-      name: "Globant",
-      url: "https://www.globant.com/",
-    },
-  },
-  {
-    title: "Node JS Developer",
-    company: {
-      name: "Zemoga",
-      url: "https://www.zemoga.com/",
-    },
-  },
-  {
-    title: "Web Developer",
-    company: {
-      name: "Uninorte",
-      url: "https://www.uninorte.edu.co/",
-    },
-  },
-];
-
 export default function Experience() {
+  const positions = [
+    {
+      title: "Software Enginner",
+      company: {
+        name: "CI&T",
+        url: "https://ciandt.com/us/en-us",
+      },
+    },
+    {
+      title: "Software Enginner",
+      company: {
+        name: "Globant",
+        url: "https://www.globant.com/",
+      },
+    },
+    {
+      title: "Node JS Developer",
+      company: {
+        name: "Zemoga",
+        url: "https://www.zemoga.com/",
+      },
+    },
+    {
+      title: "Web Developer",
+      company: {
+        name: "Uninorte",
+        url: "https://www.uninorte.edu.co/",
+      },
+    },
+  ];
+
   return (
     <div class="my-6">
       <h3 class="font-bold">Experience</h3>

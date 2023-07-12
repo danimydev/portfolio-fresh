@@ -1,23 +1,27 @@
-const icons = {
-  github: "fa-brands fa-github",
-  linkedin: "fa-brands fa-linkedin",
-  medium: "fa-brands fa-medium",
-};
-
 export default function Social() {
+  const links = [
+    {
+      href: "https://github.com/danimydev",
+      fa: "fa-brands fa-github",
+    },
+    {
+      href: "https://linkedin.com/in/danimydev",
+      fa: "fa-brands fa-linkedin",
+    },
+    {
+      href: "https://medium.com/@danimydev",
+      fa: "fa-brands fa-medium",
+    },
+  ];
+
   return (
     <>
-      Find me on{" "}
-      <a href="https://github.com/danimydev" target="_blank">
-        <i class={icons.github}></i>
-      </a>,{" "}
-      <a href="https://linkedin.com/in/danimydev" target="_blank">
-        <i class={icons.linkedin}></i>
-      </a>{" "}
-      and{" "}
-      <a href="https://medium.com/@danimydev" target="_blank">
-        <i class={icons.medium}></i>
-      </a>
+      <span class="mr-2">Find me on</span>
+      {links.map((link, index) => (
+        <a class="mx-1" key={index} href={link.href}>
+          <i class={link.fa} />
+        </a>
+      ))}
     </>
   );
 }
