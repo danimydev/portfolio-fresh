@@ -2116,4 +2116,6 @@ export const LANGUAGE_CLASSES = new Map()
   .set("javascript", "bg-[#f7ec11]")
   .set("typescript", "bg-[#1c8eff]")
   .set("python", "bg-[#1ed652]")
+  .set("c", "bg-[#000000]")
+  .set("other", "bg-[#231599]")
   .set("dockerfile", "bg-[#13458a]");
