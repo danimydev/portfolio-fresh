@@ -5,6 +5,7 @@ import Footer from "../components/Footer.tsx";
 import ProjectList from "../components/ProjectList.tsx";
 import Social from "../components/Social.tsx";
 import { repositories } from "../github/data.ts";
+import Projects from "../components/Projects.tsx";
 
 const TITLE = "@danimydev";
 const DESCRIPTION =
@@ -30,7 +31,7 @@ export default function Home(props: PageProps<unknown>) {
       <body class="max-w-xl mx-auto font-mono">
         <Header active="/"></Header>
         <Social></Social>
-        <ProjectList repos={repositories}></ProjectList>
+        <Projects repositories={repositories}></Projects>
         <Footer></Footer>
       </body>
     </>
