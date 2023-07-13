@@ -14,18 +14,16 @@ export default function NavigationBar(
 
   return (
     <nav>
-      <ul class="flex items-center gap-4 flex-wrap">
+      <ul class="flex gap-4">
         {items.map((item) => (
-          <li>
-            <a
-              href={item.href}
-              class={`hover:underline text-xs ${
-                props.active == item.href ? "font-bold" : ""
-              }`}
-            >
-              {item.name}
-            </a>
-          </li>
+          <a
+            href={item.href}
+            class={`hover:underline text-xs ${
+              props.active == item.href ? "font-bold" : ""
+            }`}
+          >
+            {item.name}
+          </a>
         ))}
       </ul>
     </nav>

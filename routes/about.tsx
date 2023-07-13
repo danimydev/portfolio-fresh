@@ -27,7 +27,7 @@ export default function Home(props: PageProps) {
         </script>
       </Head>
 
-      <body class="max-w-xl mx-auto font-mono">
+      <body class="max-w-xl mx-auto font-mono px-6">
         <Header active="/about"></Header>
         <Biography></Biography>
         <Location></Location>

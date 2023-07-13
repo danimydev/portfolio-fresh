@@ -1,11 +1,10 @@
 import { Head } from "$fresh/runtime.ts";
 import { PageProps } from "$fresh/server.ts";
 import Header from "../components/Header.tsx";
-import Footer from "../components/Footer.tsx";
-import ProjectList from "../components/ProjectList.tsx";
 import Social from "../components/Social.tsx";
-import { repositories } from "../github/data.ts";
 import Projects from "../components/Projects.tsx";
+import Footer from "../components/Footer.tsx";
+import { repositories } from "../github/data.ts";
 
 const TITLE = "@danimydev";
 const DESCRIPTION =
@@ -28,7 +27,7 @@ export default function Home(props: PageProps<unknown>) {
         </script>
       </Head>
 
-      <body class="max-w-xl mx-auto font-mono">
+      <body class="max-w-xl mx-auto font-mono px-6">
         <Header active="/"></Header>
         <Social></Social>
         <Projects repositories={repositories}></Projects>
