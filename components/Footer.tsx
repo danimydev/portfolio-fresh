@@ -1,10 +1,12 @@
-export default function Header() {
+export const Footer = () => {
   return (
-    <footer class="text-center text-sm py-6">
-      Made with &#10084;{" by "}
-      <a class="font-medium" href="https://www.github.com/danimydev">
-        @danimydev
+    <div class="text-center text-sm py-10">
+      Made with by{" "}
+      <a href="https://www.github.com/danimydev" target="blank">
+        <span class="opacity-50 hover:opacity-100">
+          @danimydev
+        </span>
       </a>
-    </footer>
+    </div>
   );
-}
+};

@@ -1,4 +1,4 @@
-export default function Experience() {
+export const Experience = () => {
   const positions = [
     {
       title: "Software Enginner",
@@ -31,25 +31,33 @@ export default function Experience() {
   ];
 
   return (
-    <div class="my-6">
-      <h3 class="font-bold">Experience</h3>
-      <table class="container">
-        {positions.map((p) => (
+    <div>
+      <table class="text-left table-auto border-collapse w-full">
+        <thead>
           <tr>
-            <td>{p.company.name}</td>
-            <td>{p.title}</td>
-            <td>
-              <a
-                href={p.company.url}
-                target="_blank"
-                class="opacity-50 hover:opacity-100"
-              >
-                <i class={`${"fa-solid fa-link fa-2xs"}`}></i>
-              </a>
-            </td>
+            <th class="font-normal opacity-50 py-3">Company</th>
+            <th class="font-normal opacity-50 py-3">Role/Position</th>
+            <th class="font-normal opacity-50 py-3">Website</th>
           </tr>
-        ))}
+        </thead>
+        <tbody>
+          {positions.map((p) => (
+            <tr class="border-t-1">
+              <td class="py-3">{p.company.name}</td>
+              <td class="py-3">{p.title}</td>
+              <td class="py-3">
+                <a
+                  href={p.company.url}
+                  target="_blank"
+                  class="opacity-50 hover:opacity-100"
+                >
+                  <i class={`${"fa-solid fa-link fa-2xs"}`}></i>
+                </a>
+              </td>
+            </tr>
+          ))}
+        </tbody>
       </table>
     </div>
   );
-}
+};

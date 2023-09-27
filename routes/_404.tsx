@@ -1,15 +1,20 @@
-import { UnknownPageProps } from "$fresh/server.ts";
+import { Head } from "$fresh/runtime.ts";
 
-export default function NotFoundPage({ url }: UnknownPageProps) {
+export default function Error404Page() {
   return (
-    <main class="h-screen w-full flex flex-col justify-center items-center">
-      <h1 class="text-9xl font-extrabold tracking-widest">404</h1>
-      <div class="bg-[#2eff7b] px-2 text-sm rounded rotate-12 absolute">
-        Page Not Found
+    <>
+      <Head>
+        <title>404 - Page not found</title>
+      </Head>
+      <div class="px-4 py-8 mx-auto">
+        <div class="max-w-screen-md mx-auto flex flex-col items-center justify-center">
+          <h1 class="text-4xl font-bold">404 - Page not found</h1>
+          <p class="my-4">
+            The page you were looking for doesn't exist.
+          </p>
+          <a href="/" class="underline">Go back home</a>
+        </div>
       </div>
-      <button class="mt-5">
-        <a class="hover:underline" href="/">Go Home</a>
-      </button>
-    </main>
+    </>
   );
 }

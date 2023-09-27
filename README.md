@@ -1,11 +1,13 @@
-# portfolio-fresh
+# Fresh project
 
-My portfolio website built using fresh js framework in which you can find my
-projects [danimydev.xyz](https://www.danimydev.xyz)
+Your new Fresh project is ready to go. You can follow the Fresh "Getting
+Started" guide here: https://fresh.deno.dev/docs/getting-started
 
 ### Usage
 
-Start the project:
+Make sure to install Deno: https://deno.land/manual/getting_started/installation
+
+Then start the project:
 
 ```
 deno task start

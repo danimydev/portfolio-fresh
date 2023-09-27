@@ -1,19 +1,26 @@
-import { user } from "../github/data.ts";
-import { getDate } from "../utils/date.ts";
+import { getDate } from "@/utils/format-date.ts";
 
-export default function Location() {
+export const Location = ({
+  user,
+}: {
+  user: {
+    location: string;
+  };
+}) => {
   const { month, year } = getDate();
   return (
-    <div class="flex p-5 border-1 my-10">
-      <span>
-        📍
-      </span>
+    <div class="flex border rounded-lg shadow px-5 py-4 pb-5 space-y-4 font-mono text-sm">
       <div>
-        <p class="opacity-50">
-          {`${month}, ${year}`}
+        <p>
+          <span>
+            📍
+          </span>
+          <span class="opacity-50">
+            {`${month}, ${year}`}
+          </span>
         </p>
-        <p class="flex items-center">
-          {user.location}
+        <p class="flex items-center pl-5">
+          {user.location || "Barranquilla, Atlantico, Colombia"}
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Colombia.svg"
             alt="colombia flag"
@@ -23,4 +30,4 @@ export default function Location() {
       </div>
     </div>
   );
-}
+};
