@@ -1,4 +1,4 @@
-import { languageColor, defaultLanguageColor } from "../utils/github.ts";
+import { defaultLanguageColor, languageColor } from "../utils/github.ts";
 
 import { getDate } from "../utils/format-date.ts";
 
