@@ -45,7 +45,7 @@ export const Card = ({
           {language || "Other"}
         </span>
       </div>
-      <div class="text-xs font-mono">
+      <div class="text-xs ">
         <div>
           <span class="font-bold">Created at:</span>{" "}
           {getFormattedDate(getDate(createdAt))}

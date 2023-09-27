@@ -9,7 +9,7 @@ export const Location = ({
 }) => {
   const { month, year } = getDate();
   return (
-    <div class="flex border rounded-lg shadow px-5 py-4 pb-5 space-y-4 font-mono text-sm">
+    <div class="flex border rounded-lg shadow px-5 py-4 pb-5 space-y-4  text-sm">
       <div>
         <p>
           <span>
