@@ -1,4 +1,4 @@
-import { REPOSITORIES, USER } from "@/utils/data.ts";
+import { REPOSITORIES, USER } from "../utils/data.ts";
 
 const GITHUB_URLS = {
   userAvatar: "https://avatars.githubusercontent.com/u/31113489?v=4",
