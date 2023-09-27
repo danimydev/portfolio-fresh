@@ -1,7 +1,7 @@
 import { LayoutProps } from "$fresh/server.ts";
 
 import { Navbar } from "@/components/navbar.tsx";
-import { Footer } from "@/components/footer.tsx";
+//import { Footer } from "@/components/footer.tsx";
 import {
   GithubIcon,
   LinkedinIcon,
@@ -33,7 +33,7 @@ export default function Layout({ Component, url }: LayoutProps) {
         </div>
       </div>
       <Component />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
