@@ -48,12 +48,3 @@ export const fetchUser = async () => {
     return USER as User;
   }
 };
-
-export const languageColor = new Map([
-  ["TypeScript", "blue"],
-  ["C", "gray"],
-  ["Python", "green"],
-  ["JavaScript", "yellow"],
-]);
-
-export const defaultLanguageColor = "black";
