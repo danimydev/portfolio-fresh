@@ -1,4 +1,4 @@
-import { getDate } from "@/utils/format-date.ts";
+import { getDate } from "../utils/format-date.ts";
 
 export const Location = ({
   user,

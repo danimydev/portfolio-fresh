@@ -1,4 +1,4 @@
-import { Heading } from "@/components/heading.tsx";
+import { Heading } from "./heading.tsx";
 
 export const Biography = () => {
   return (

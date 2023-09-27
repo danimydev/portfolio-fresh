@@ -1,6 +1,6 @@
-import { defaultLanguageColor, languageColor } from "@/utils/github.ts";
+import { languageColor, defaultLanguageColor } from "../utils/github.ts";
 
-import { getDate } from "@/utils/format-date.ts";
+import { getDate } from "../utils/format-date.ts";
 
 export const Card = ({
   title,

@@ -1,10 +1,10 @@
 import { PageProps } from "$fresh/server.ts";
 
-import { Biography } from "@/components/biography.tsx";
-import { Location } from "@/components/location.tsx";
-import { Experience } from "@/components/experience.tsx";
+import { Biography } from "../..//components/biography.tsx";
+import { Location } from "../..//components/location.tsx";
+import { Experience } from "../..//components/experience.tsx";
 
-import { fetchUser } from "@/utils/github.ts";
+import { fetchUser } from "../..//utils/github.ts";
 
 export default async function AboutPage(props: PageProps) {
   const user = await fetchUser();

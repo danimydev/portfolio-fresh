@@ -1,5 +1,5 @@
-import { Card } from "@/components/card.tsx";
-import { Heading } from "@/components/heading.tsx";
+import { Card } from "./card.tsx";
+import { Heading } from "./heading.tsx";
 
 export const CardsList = ({
   projects,

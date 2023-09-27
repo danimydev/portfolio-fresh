@@ -1,12 +1,12 @@
 import { LayoutProps } from "$fresh/server.ts";
 
-import { Navbar } from "@/components/navbar.tsx";
-//import { Footer } from "@/components/footer.tsx";
+import { Navbar } from "../../components/navbar.tsx";
+import { Footer } from "../../components/footer.tsx";
 import {
   GithubIcon,
   LinkedinIcon,
   MediumIcon,
-} from "@/components/icons/index.tsx";
+} from "../../components/icons/index.tsx"
 
 export default function Layout({ Component, url }: LayoutProps) {
   return (
@@ -33,7 +33,7 @@ export default function Layout({ Component, url }: LayoutProps) {
         </div>
       </div>
       <Component />
-      {/* <Footer /> */}
+       <Footer />
     </div>
   );
 }
