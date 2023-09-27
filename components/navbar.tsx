@@ -23,15 +23,17 @@ export const Navbar = ({
           <nav class="space-x-2 text-sm">
             <a
               href="/"
-              class={`hover:opacity-100 opacity-50 ${pathname === "/" ? "opacity-100" : ""
-                }`}
+              class={`hover:opacity-100 opacity-50 ${
+                pathname === "/" ? "opacity-100" : ""
+              }`}
             >
               home
             </a>
             <a
               href="/about"
-              class={`hover:opacity-100 opacity-50 ${pathname === "/about" ? "opacity-100" : ""
-                }`}
+              class={`hover:opacity-100 opacity-50 ${
+                pathname === "/about" ? "opacity-100" : ""
+              }`}
             >
               about
             </a>
