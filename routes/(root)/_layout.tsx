@@ -49,17 +49,29 @@ export default function Layout({ Component, url }: LayoutProps) {
         Find me on
         <div class="ml-2 flex items-center flex-start space-x-2 text-gray-500">
           <div>
-            <a href="https://www.github.com/danimydev" target="blank">
+            <a
+              href="https://www.github.com/danimydev"
+              target="blank"
+              aria-label="Visit GitHub danimydev profile"
+            >
               <IconBrandGithub class="hover:text-purple-500" />
             </a>
           </div>
           <div>
-            <a href="https://www.linkedin.com/in/danimydev" target="blank">
+            <a
+              href="https://www.linkedin.com/in/danimydev"
+              target="blank"
+              aria-label="Visit Linkedin danimydev profile"
+            >
               <IconBrandLinkedin class="hover:text-blue-500" />
             </a>
           </div>
           <div>
-            <a href="https://medium.com/@danimydev" target="blank">
+            <a
+              href="https://medium.com/@danimydev"
+              target="blank"
+              aria-label="Visit Medium danimydev profile"
+            >
               <IconBrandMedium class="hover:text-green-500" />
             </a>
           </div>
@@ -68,7 +80,11 @@ export default function Layout({ Component, url }: LayoutProps) {
       <Component />
       <div class="text-center text-sm py-10">
         Made with &#x2764; by{" "}
-        <a href="https://www.github.com/danimydev" target="blank">
+        <a
+          href="https://www.github.com/danimydev"
+          target="blank"
+          aria-label="Visit Linkedin danimydev profile"
+        >
           <span class="opacity-50 hover:opacity-100">
             @danimydev
           </span>
