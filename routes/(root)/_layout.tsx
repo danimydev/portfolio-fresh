@@ -27,7 +27,7 @@ export default function Layout({ Component, url }: LayoutProps) {
             <nav class="space-x-2 text-sm">
               <a
                 href="/"
-                class={`hover:opacity-100 opacity-50 ${
+                class={`hover:text-black text-gray-500 ${
                   pathname === "/" ? "opacity-100" : ""
                 }`}
               >
@@ -35,7 +35,7 @@ export default function Layout({ Component, url }: LayoutProps) {
               </a>
               <a
                 href="/about"
-                class={`hover:opacity-100 opacity-50 ${
+                class={`hover:text-black text-gray-500 ${
                   pathname === "/about" ? "opacity-100" : ""
                 }`}
               >
@@ -85,7 +85,7 @@ export default function Layout({ Component, url }: LayoutProps) {
           target="blank"
           aria-label="Visit Linkedin danimydev profile"
         >
-          <span class="opacity-50 hover:opacity-100">
+          <span class="text-gray-500 hover:text-black">
             @danimydev
           </span>
         </a>
