@@ -1,16 +1,12 @@
 import { AppProps } from "$fresh/server.ts";
 
-export default function App({ Component, url }: AppProps) {
+export default function App({ Component }: AppProps) {
   return (
-    <html>
+    <html lang="en">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script
-          src="https://kit.fontawesome.com/4eca672d57.js"
-          crossOrigin="anonymous"
-        >
-        </script>
+        <meta name="description" content="Daniel Madrid portfolio website." />
         <title>danimydev</title>
       </head>
       <body>

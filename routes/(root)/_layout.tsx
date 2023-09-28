@@ -1,5 +1,9 @@
 import { LayoutProps } from "$fresh/server.ts";
 
+import IconBrandGithub from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/brand-github.tsx";
+import IconBrandLinkedin from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/brand-linkedin.tsx";
+import IconBrandMedium from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/brand-medium.tsx";
+
 export default function Layout({ Component, url }: LayoutProps) {
   const { pathname } = url;
   return (
@@ -23,15 +27,17 @@ export default function Layout({ Component, url }: LayoutProps) {
             <nav class="space-x-2 text-sm">
               <a
                 href="/"
-                class={`hover:opacity-100 opacity-50 ${pathname === "/" ? "opacity-100" : ""
-                  }`}
+                class={`hover:opacity-100 opacity-50 ${
+                  pathname === "/" ? "opacity-100" : ""
+                }`}
               >
                 home
               </a>
               <a
                 href="/about"
-                class={`hover:opacity-100 opacity-50 ${pathname === "/about" ? "opacity-100" : ""
-                  }`}
+                class={`hover:opacity-100 opacity-50 ${
+                  pathname === "/about" ? "opacity-100" : ""
+                }`}
               >
                 about
               </a>
@@ -41,20 +47,32 @@ export default function Layout({ Component, url }: LayoutProps) {
       </div>
       <div class="flex items-center">
         Find me on
-        <div class="ml-2 flex items-center flex-start space-x-2">
+        <div class="ml-2 flex items-center flex-start space-x-2 text-gray-500">
           <div>
-            <a href="https://www.github.com/danimydev" target="blank">
-              <i class="fa-brands fa-github text-gray-400 hover:text-purple-500" />
+            <a
+              href="https://www.github.com/danimydev"
+              target="blank"
+              aria-label="Visit GitHub danimydev profile"
+            >
+              <IconBrandGithub class="hover:text-purple-500" />
             </a>
           </div>
           <div>
-            <a href="https://www.linkedin.com/in/danimydev" target="blank">
-              <i class="fa-brands fa-linkedin text-gray-400 hover:text-blue-500" />
+            <a
+              href="https://www.linkedin.com/in/danimydev"
+              target="blank"
+              aria-label="Visit Linkedin danimydev profile"
+            >
+              <IconBrandLinkedin class="hover:text-blue-500" />
             </a>
           </div>
           <div>
-            <a href="https://medium.com/@danimydev" target="blank">
-              <i class="fa-brands fa-medium text-gray-400 hover:text-green-500" />
+            <a
+              href="https://medium.com/@danimydev"
+              target="blank"
+              aria-label="Visit Medium danimydev profile"
+            >
+              <IconBrandMedium class="hover:text-green-500" />
             </a>
           </div>
         </div>
@@ -62,7 +80,11 @@ export default function Layout({ Component, url }: LayoutProps) {
       <Component />
       <div class="text-center text-sm py-10">
         Made with &#x2764; by{" "}
-        <a href="https://www.github.com/danimydev" target="blank">
+        <a
+          href="https://www.github.com/danimydev"
+          target="blank"
+          aria-label="Visit Linkedin danimydev profile"
+        >
           <span class="opacity-50 hover:opacity-100">
             @danimydev
           </span>
