@@ -39,27 +39,27 @@ export default function Layout({ Component }: LayoutProps) {
 
       <footer class="text-center text-sm space-y-4">
         <nav class="flex items-center justify-center">
-            <a
-              href="https://www.github.com/danimydev"
-              target="blank"
-              aria-label="Visit GitHub danimydev profile"
-            >
-              <IconBrandGithub class="hover:text-purple-500" />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/danimydev"
-              target="blank"
-              aria-label="Visit Linkedin danimydev profile"
-            >
-              <IconBrandLinkedin class="hover:text-blue-500" />
-            </a>
-            <a
-              href="https://medium.com/@danimydev"
-              target="blank"
-              aria-label="Visit Medium danimydev profile"
-            >
-              <IconBrandMedium class="hover:text-green-500" />
-            </a>
+          <a
+            href="https://www.github.com/danimydev"
+            target="blank"
+            aria-label="Visit GitHub danimydev profile"
+          >
+            <IconBrandGithub class="hover:text-purple-500" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/danimydev"
+            target="blank"
+            aria-label="Visit Linkedin danimydev profile"
+          >
+            <IconBrandLinkedin class="hover:text-blue-500" />
+          </a>
+          <a
+            href="https://medium.com/@danimydev"
+            target="blank"
+            aria-label="Visit Medium danimydev profile"
+          >
+            <IconBrandMedium class="hover:text-green-500" />
+          </a>
         </nav>
         <p>
           Made with &#x2764; by{" "}
