@@ -4,51 +4,41 @@ import IconBrandGithub from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/bran
 import IconBrandLinkedin from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/brand-linkedin.tsx";
 import IconBrandMedium from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/brand-medium.tsx";
 
-export default function Layout({ Component, url }: LayoutProps) {
-  const { pathname } = url;
+export default function Layout({ Component }: LayoutProps) {
   return (
-    <div class="layout mx-auto px-4 max-w-xl space-y-5 font-mono">
-      <div class="flex items-center flex-start space-x-4 py-10">
+    <div class="space-y-10 py-12">
+      <header class="flex flex-col items-center">
         <div>
           <img
-            class=""
-            src="/logo_animated.gif"
-            width="80"
-            height="80"
+            src="/sticker.png"
+            width="120"
+            height="120"
             alt="the Github octocat animated logo"
             draggable={false}
           />
         </div>
-        <div>
-          <div class="font-bold text-xl ">
-            daniel madrid
-          </div>
-          <div>
-            <nav class="space-x-2 text-sm">
-              <a
-                href="/"
-                class={`hover:text-black text-gray-500 ${
-                  pathname === "/" ? "opacity-100" : ""
-                }`}
-              >
-                home
-              </a>
-              <a
-                href="/about"
-                class={`hover:text-black text-gray-500 ${
-                  pathname === "/about" ? "opacity-100" : ""
-                }`}
-              >
-                about
-              </a>
-            </nav>
-          </div>
+        <div class="text-center">
+          <h1 class="font-bold text-2xl">
+            Daniel Madrid
+          </h1>
+          <nav class="text-sm">
+            <a
+              href="mailto:danimydev@gmail.com"
+              target="blank"
+              aria-label="Send an email to danimydev@gmail.com"
+            >
+              danimydev@gmail.com
+            </a>
+          </nav>
         </div>
-      </div>
-      <div class="flex items-center">
-        Find me on
-        <div class="ml-2 flex items-center flex-start space-x-2 text-gray-500">
-          <div>
+      </header>
+
+      <main class="layout mx-auto px-10 max-w-xl md:max-w-2xl">
+        <Component />
+      </main>
+
+      <footer class="text-center text-sm space-y-4">
+        <nav class="flex items-center justify-center">
             <a
               href="https://www.github.com/danimydev"
               target="blank"
@@ -56,8 +46,6 @@ export default function Layout({ Component, url }: LayoutProps) {
             >
               <IconBrandGithub class="hover:text-purple-500" />
             </a>
-          </div>
-          <div>
             <a
               href="https://www.linkedin.com/in/danimydev"
               target="blank"
@@ -65,8 +53,6 @@ export default function Layout({ Component, url }: LayoutProps) {
             >
               <IconBrandLinkedin class="hover:text-blue-500" />
             </a>
-          </div>
-          <div>
             <a
               href="https://medium.com/@danimydev"
               target="blank"
@@ -74,22 +60,18 @@ export default function Layout({ Component, url }: LayoutProps) {
             >
               <IconBrandMedium class="hover:text-green-500" />
             </a>
-          </div>
-        </div>
-      </div>
-      <Component />
-      <div class="text-center text-sm py-10">
-        Made with &#x2764; by{" "}
-        <a
-          href="https://www.github.com/danimydev"
-          target="blank"
-          aria-label="Visit Linkedin danimydev profile"
-        >
-          <span class="text-gray-500 hover:text-black">
+        </nav>
+        <p>
+          Made with &#x2764; by{" "}
+          <a
+            href="https://www.github.com/danimydev"
+            target="blank"
+            aria-label="Visit Linkedin danimydev profile"
+          >
             @danimydev
-          </span>
-        </a>
-      </div>
+          </a>
+        </p>
+      </footer>
     </div>
   );
 }
