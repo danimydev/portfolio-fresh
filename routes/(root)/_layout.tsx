@@ -7,7 +7,7 @@ import IconBrandMedium from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/bran
 export default function Layout({ Component }: LayoutProps) {
   return (
     <div class="space-y-10 py-12">
-      <header class="flex flex-col items-center">
+      <header class="flex flex-col items-center space-y-2">
         <div>
           <img
             src="/ghost_chibi.jpg"
@@ -31,6 +31,31 @@ export default function Layout({ Component }: LayoutProps) {
             </a>
           </nav>
         </div>
+        <div>
+          <nav class="flex items-center justify-center">
+            <a
+              href="https://www.github.com/danimydev"
+              target="blank"
+              aria-label="Visit GitHub danimydev profile"
+            >
+              <IconBrandGithub />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/danimydev"
+              target="blank"
+              aria-label="Visit Linkedin danimydev profile"
+            >
+              <IconBrandLinkedin />
+            </a>
+            <a
+              href="https://medium.com/@danimydev"
+              target="blank"
+              aria-label="Visit Medium danimydev profile"
+            >
+              <IconBrandMedium />
+            </a>
+          </nav>
+        </div>
       </header>
 
       <main class="layout mx-auto px-10 max-w-xl md:max-w-2xl lg:max-w-4xl">
@@ -38,39 +63,18 @@ export default function Layout({ Component }: LayoutProps) {
       </main>
 
       <footer class="text-center text-sm space-y-4">
-        <nav class="flex items-center justify-center">
-          <a
-            href="https://www.github.com/danimydev"
-            target="blank"
-            aria-label="Visit GitHub danimydev profile"
-          >
-            <IconBrandGithub />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/danimydev"
-            target="blank"
-            aria-label="Visit Linkedin danimydev profile"
-          >
-            <IconBrandLinkedin />
-          </a>
-          <a
-            href="https://medium.com/@danimydev"
-            target="blank"
-            aria-label="Visit Medium danimydev profile"
-          >
-            <IconBrandMedium />
-          </a>
-        </nav>
-        <p>
-          Made with &#x2764; by{" "}
-          <a
-            href="https://www.github.com/danimydev"
-            target="blank"
-            aria-label="Visit Linkedin danimydev profile"
-          >
-            @danimydev
-          </a>
-        </p>
+        <a
+          href="https://fresh.deno.dev"
+          target="blank"
+          aria-label="Visit fresh website"
+        >
+          <img
+            className="mx-auto"
+            src="https://fresh.deno.dev/fresh-badge.svg"
+            alt="made with fresh badge"
+            srcset=""
+          />
+        </a>
       </footer>
     </div>
   );
