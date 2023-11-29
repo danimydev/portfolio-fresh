@@ -23,7 +23,7 @@ export const USER = {
   "name": "Daniel Madrid",
   "company": "Somo",
   "blog": "danimydev.xyz",
-  "location": "Playa Mendoza",
+  "location": "Barranquilla",
   "email": null,
   "hireable": null,
   "bio": null,
