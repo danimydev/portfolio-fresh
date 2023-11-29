@@ -10,10 +10,10 @@ export default function Layout({ Component }: LayoutProps) {
       <header class="flex flex-col items-center">
         <div>
           <img
-            src="/sticker.png"
+            src="/ghost_chibi.jpg"
             width="120"
             height="120"
-            alt="the Github octocat animated logo"
+            alt="simon riley from cod as chibi"
             draggable={false}
           />
         </div>
@@ -33,7 +33,7 @@ export default function Layout({ Component }: LayoutProps) {
         </div>
       </header>
 
-      <main class="layout mx-auto px-10 max-w-xl md:max-w-2xl">
+      <main class="layout mx-auto px-10 max-w-xl md:max-w-2xl lg:max-w-4xl">
         <Component />
       </main>
 
@@ -44,21 +44,21 @@ export default function Layout({ Component }: LayoutProps) {
             target="blank"
             aria-label="Visit GitHub danimydev profile"
           >
-            <IconBrandGithub class="hover:text-purple-500" />
+            <IconBrandGithub />
           </a>
           <a
             href="https://www.linkedin.com/in/danimydev"
             target="blank"
             aria-label="Visit Linkedin danimydev profile"
           >
-            <IconBrandLinkedin class="hover:text-blue-500" />
+            <IconBrandLinkedin />
           </a>
           <a
             href="https://medium.com/@danimydev"
             target="blank"
             aria-label="Visit Medium danimydev profile"
           >
-            <IconBrandMedium class="hover:text-green-500" />
+            <IconBrandMedium />
           </a>
         </nav>
         <p>
