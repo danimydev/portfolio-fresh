@@ -98,9 +98,11 @@ export default async function HomePage(_props: PageProps) {
             </div>
             <div>
               <iframe
-                src="https://maps.google.com/maps?q=barranquilla&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+                width="420"
+                height="200"
                 frameborder="0"
                 scrolling="no"
+                src="https://maps.google.com/maps?q=Barranquilla+()&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
               >
               </iframe>
             </div>
