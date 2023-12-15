@@ -1,4 +1,4 @@
-import { REPOSITORIES, USER } from "../utils/data.ts";
+import { GITHUB_REPOSITORIES, GITHUB_USER } from "../utils/data.ts";
 
 const GITHUB_URLS = {
   userAvatar: "https://avatars.githubusercontent.com/u/31113489?v=4",
@@ -33,7 +33,7 @@ export const fetchRepositories = async () => {
     const repositories = await response.json() as Repository[];
     return repositories.filter((repository) => !repository.fork);
   } catch (_error) {
-    return REPOSITORIES.filter((repository) =>
+    return GITHUB_REPOSITORIES.filter((repository) =>
       !repository.fork
     ) as Repository[];
   }
@@ -45,6 +45,6 @@ export const fetchUser = async () => {
     const user = await response.json() as User;
     return user;
   } catch (_error) {
-    return USER as User;
+    return GITHUB_USER as User;
   }
 };

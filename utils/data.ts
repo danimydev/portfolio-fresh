@@ -1,4 +1,4 @@
-export const USER = {
+export const GITHUB_USER = {
   "login": "danimydev",
   "id": 31113489,
   "node_id": "MDQ6VXNlcjMxMTEzNDg5",
@@ -36,7 +36,7 @@ export const USER = {
   "updated_at": "2023-11-20T18:57:53Z",
 };
 
-export const REPOSITORIES = [
+export const GITHUB_REPOSITORIES = [
   {
     "id": 474822586,
     "node_id": "R_kgDOHE03ug",
@@ -1308,5 +1308,55 @@ export const REPOSITORIES = [
     "open_issues": 0,
     "watchers": 0,
     "default_branch": "main",
+  },
+];
+
+export const POSITIONS = [
+  {
+    role: "Software Enginner",
+    from: 2022,
+    company: {
+      name: "CI&T",
+      url: "https://ciandt.com/us/en-us",
+    },
+    description:
+      "I'm currently part of a team working on a knowledge base application aimed at helping users easily find documentation. My responsibilities primarily revolve around managing the backend services and handling third-party integration layers for the project.",
+    stack: ["node", "typescript", "javascript", "graphql", "next"],
+  },
+  {
+    role: "Software Enginner",
+    from: 2021,
+    to: 2022,
+    company: {
+      name: "Globant",
+      url: "https://www.globant.com/",
+    },
+    description:
+      "During my tenure at a major ecommerce company as a Node.js vendor developer, I had the privilege of engaging in both backend and frontend development utilizing React.js and Node.js (microservices). My role extended to crafting comprehensive documentation on legacy code and workflows, enhancing comprehension for the refactoring process of specific features.",
+    stack: ["node", "react", "typescript"],
+  },
+  {
+    role: "Node JS Developer",
+    from: 2020,
+    to: 2021,
+    company: {
+      name: "Zemoga",
+      url: "https://www.zemoga.com/",
+    },
+    description:
+      "As a Node.js Developer at Walmart InHome, I enhanced code efficiency by applying the strategy pattern, optimized a database backup algorithm for a 60% CPU usage reduction and 82% memory savings, and developed an adapter API for seamless integration with an external streaming service into our main business API.",
+    stack: ["node", "express", "graphql", "javascript"],
+  },
+  {
+    role: "Web Developer",
+    from: 2020,
+    to: 2020,
+    company: {
+      name: "Uninorte",
+      url: "https://www.uninorte.edu.co/",
+    },
+    description:
+      "As part of the university's web development team, I focused on creating user-friendly educational web apps. Notably, I significantly improved the efficiency of the business department's student testing process by developing a web app, reducing test time from 3 hours to just 1 hour.",
+    stack: ["angular", "react", "javascript"],
   },
 ];
