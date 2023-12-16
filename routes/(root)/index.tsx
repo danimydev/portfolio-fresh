@@ -1,14 +1,32 @@
+import { Handlers, PageProps } from "$fresh/server.ts";
+
 import { Project } from "../../components/project.tsx";
 import { Position } from "../../components/position.tsx";
 
-import { fetchRepositories } from "../../utils/github.ts";
+import { fetchRepositories, Repository, User } from "../../utils/github.ts";
 import { fetchUser } from "../../utils/github.ts";
 import { getDate } from "../../utils/format-date.ts";
 import { POSITIONS } from "../../utils/data.ts";
 
-export default async function HomePage() {
-  const repositories = await fetchRepositories();
-  const user = await fetchUser();
+export const handler: Handlers<{ repositories: Repository[]; user: User }> = {
+  async GET(_req, ctx) {
+    const repositories = await fetchRepositories();
+    const user = await fetchUser();
+    return ctx.render({
+      repositories,
+      user,
+    });
+  },
+};
+
+export default function HomePage(
+  {
+    data: {
+      repositories,
+      user,
+    },
+  }: PageProps<{ repositories: Repository[]; user: User }>,
+) {
   const { month, year } = getDate();
 
   return (

@@ -7,7 +7,7 @@ const GITHUB_URLS = {
   userRepositories: "https://api.github.com/users/danimydev/repos",
 };
 
-type Repository = {
+export type Repository = {
   name: string;
   html_url: string;
   description: string;
@@ -19,7 +19,7 @@ type Repository = {
   fork: boolean;
 };
 
-type User = {
+export type User = {
   login: string;
   name: string;
   company: string;
