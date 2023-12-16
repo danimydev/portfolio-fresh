@@ -7,6 +7,7 @@ import { fetchRepositories, Repository, User } from "../../utils/github.ts";
 import { fetchUser } from "../../utils/github.ts";
 import { getDate } from "../../utils/format-date.ts";
 import { POSITIONS } from "../../utils/data.ts";
+import { SectionTitle } from "../../components/section-title.tsx";
 
 export const handler: Handlers<{ repositories: Repository[]; user: User }> = {
   async GET(_req, ctx) {
@@ -32,10 +33,8 @@ export default function HomePage(
   return (
     <div class="space-y-20">
       <div class="space-y-5">
-        <div class="font-bold text-lg sticky top-0 bg-white py-4">
-          About
-        </div>
-        <div class="my-4 space-y-4">
+        <SectionTitle title="About" />
+        <div class="space-y-4">
           <p>
             Hey, I'm Daniel Madrid, a Software Engineer who loves coding. I use
             tools like Node.js, React, TypeScript, SQL, and NoSQL to build
@@ -57,10 +56,15 @@ export default function HomePage(
           </p>
         </div>
         <div class="p-4 border">
-          <div>
-            📍<span class="text-gray-500">{`${month}, ${year}`}</span>
+          <div className="space-x-2">
+            <span>
+              📍
+            </span>
+            <span class="text-sm text-[darkgray]">
+              {`${month.toUpperCase()}, ${year}`}
+            </span>
           </div>
-          <div class="flex items-center pl-5">
+          <div class="flex items-center pl-7">
             {user.location || "Barranquilla, Atlantico, Colombia"}
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Colombia.svg"
@@ -71,10 +75,8 @@ export default function HomePage(
         </div>
       </div>
 
-      <div class="space-y-6">
-        <div class="font-bold text-lg sticky top-0 bg-white py-4">
-          Experience
-        </div>
+      <div class="space-y-5">
+        <SectionTitle title="Experience" />
         {POSITIONS.map((position, index) => (
           <Position
             role={position.role}
@@ -88,9 +90,7 @@ export default function HomePage(
       </div>
 
       <div class="space-y-5">
-        <div class="font-bold text-lg sticky top-0 bg-white py-4">
-          Projects
-        </div>
+        <SectionTitle title="Projects" />
         {repositories.map((repository, index) => (
           <Project
             title={repository.name}
