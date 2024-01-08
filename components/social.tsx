@@ -10,6 +10,7 @@ export const Social = () => {
         href="https://www.github.com/danimydev"
         target="blank"
         aria-label="Visit GitHub danimydev profile"
+        className="border p-2"
       >
         <IconBrandGithub />
       </a>
@@ -17,6 +18,7 @@ export const Social = () => {
         href="https://www.linkedin.com/in/danimydev"
         target="blank"
         aria-label="Visit Linkedin danimydev profile"
+        className="border p-2"
       >
         <IconBrandLinkedin />
       </a>
@@ -24,6 +26,7 @@ export const Social = () => {
         href="https://medium.com/@danimydev"
         target="blank"
         aria-label="Visit Medium danimydev profile"
+        className="border p-2"
       >
         <IconBrandMedium />
       </a>
@@ -31,6 +34,7 @@ export const Social = () => {
         href="https://instagram.com/danimydev"
         target="blank"
         aria-label="Visit Medium danimydev profile"
+        className="border p-2"
       >
         <IconBrandInstagram />
       </a>
