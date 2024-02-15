@@ -108,7 +108,10 @@ export default function HomePage(
       <div class="space-y-5">
         <SectionTitle title="Contact" />
         <div>
-          Email me <a className="text-blue-500" href="mailto:danimydev@gmail.com">here</a>
+          Email me{" "}
+          <a className="text-blue-500" href="mailto:danimydev@gmail.com">
+            here
+          </a>
         </div>
         <div>
           You can found me on social media also...
