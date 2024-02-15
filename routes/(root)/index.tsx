@@ -8,6 +8,7 @@ import { fetchUser } from "../../utils/github.ts";
 import { getDate } from "../../utils/format-date.ts";
 import { POSITIONS } from "../../utils/data.ts";
 import { SectionTitle } from "../../components/section-title.tsx";
+import { Social } from "../../components/social.tsx";
 
 export const handler: Handlers<{ repositories: Repository[]; user: User }> = {
   async GET(_req, ctx) {
@@ -102,6 +103,19 @@ export default function HomePage(
             key={index}
           />
         ))}
+      </div>
+
+      <div class="space-y-5">
+        <SectionTitle title="Contact" />
+        <div>
+          Email me <a className="text-blue-500" href="mailto:danimydev@gmail.com">here</a>
+        </div>
+        <div>
+          You can found me on social media also...
+        </div>
+        <div>
+          <Social />
+        </div>
       </div>
     </div>
   );
