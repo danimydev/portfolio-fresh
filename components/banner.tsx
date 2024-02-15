@@ -1,6 +1,6 @@
 export const Banner = () => {
   return (
-    <div class="space-y-2">
+    <div class="space-y-6">
       <div class="font-bold text-5xl">
         Daniel Madrid
       </div>

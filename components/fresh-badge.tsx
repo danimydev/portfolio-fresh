@@ -6,7 +6,7 @@ export const FreshBadge = () => {
       aria-label="Visit fresh website"
     >
       <img
-        className="mx-auto"
+        className="mx-auto h-[30px]"
         src="https://fresh.deno.dev/fresh-badge.svg"
         alt="made with fresh badge"
         srcset=""

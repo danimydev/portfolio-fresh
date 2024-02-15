@@ -6,8 +6,8 @@ import { Social } from "../../components/social.tsx";
 
 export default function Layout({ Component }: PageProps) {
   return (
-    <div class="mx-auto space-y-20 px-8 py-20 max-w-2xl">
-      <header class="space-y-6">
+    <div class="mx-auto space-y-20 px-8 py-20 max-w-2xl font-mono">
+      <header class="space-y-10">
         <Banner />
         <Social />
       </header>
